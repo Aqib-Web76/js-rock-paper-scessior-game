@@ -3,12 +3,14 @@
   padding: 0;
   text-align: center;
 }
+
 h1 {
   background-color: #081b31;
   color: white;
   height: 5rem;
   line-height: 5rem;
 }
+
 .choice {
   height: 165px;
   width: 165px;
@@ -17,17 +19,19 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .choice:hover {
   cursor: pointer;
-
   background-color: #081b31;
 }
+
 img {
   height: 150px;
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
+
 .choices {
   display: flex;
   justify-content: center;
@@ -35,6 +39,7 @@ img {
   gap: 3rem;
   margin-top: 5rem;
 }
+
 .score-board {
   display: flex;
   justify-content: center;
@@ -43,19 +48,79 @@ img {
   margin-top: 3rem;
   gap: 5rem;
 }
+
 #user-score,
 #com-score {
   font-size: 4rem;
 }
-#msg{
-    background-color: #081b31;
-     color:  white;
-     font-size: 2rem;
-     display: inline;
-     padding: 1rem;
-     border-radius: 1rem;
 
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
 }
-.msg-container{
-    margin-top: 5rem;
+
+.msg-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
+#check-result {
+  background-color: #081b31;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#result {
+  display: block; /* Ensures it takes up the full width available */
+  margin-top: 20; /* Adds space above the result */
+  padding: 10px; /* Adds padding inside the result box */
+  background-color: #f0f0f0; /* Background color of the result box */
+  border: 1px solid #ccc; /* Border of the result box */
+  border-radius: 5px; /* Rounds the corners of the result box */
+  font-size: 16px; /* Font size of the text inside the result box */
+  color: #333; /* Text color */
+}
+
+#result table {
+  width: 100%;
+  border-collapse: collapse; /* Collapses borders between table cells */
+  font-size: 18px; /* Large font size for table content */
+}
+
+#result th, #result td {
+  border: 1px solid #ccc; /* Border for table cells */
+  padding: 10px; /* Padding inside table cells */
+  text-align: left; /* Align text to the left */
+}
+
+#result th {
+  background-color: #4CAF50; /* Background color for header cells */
+  color: white; /* Text color for header cells */
+}
+
+#result tr:nth-child(even) {
+  background-color: #f2f2f2; /* Background color for even rows */
+}
+
+#result tr:hover {
+  background-color: #ddd; /* Background color when hovering over rows */
+}
+
+.main{
+  background-color: #4CAF50;
+}
+
+/*reset button*/
+
