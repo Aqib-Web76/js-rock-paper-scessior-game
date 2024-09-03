@@ -23,3 +23,4 @@ function calculateFactorial(num) {
 
     return { factorial, steps: steps.join(' x ') };
 }
+
